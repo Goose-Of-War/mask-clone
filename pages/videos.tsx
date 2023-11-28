@@ -18,6 +18,7 @@ export default function VideosPage () {
 		<HeadContent
 			title="Videos"
 			description="Experience the thrill of captivating AMVs created by our talented team at Manga and Anime Society Kharagpur [MASK]. Immerse yourself in a world of dynamic video editing, mesmerizing soundtracks, and breathtaking visuals."
+			keywords={['Videos', 'AMV', 'Music', 'Coverage', 'Anime Music Video', 'Edits', 'YouTube']}
 		/>
 		<TextPage>
 			<p style={{ textAlign: "center"}}>Check out our video content here or on <Link isRed href="https://www.youtube.com/@maskiitkgp">YouTube</Link></p>

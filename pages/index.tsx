@@ -1,5 +1,5 @@
 import HeadContent from '@/components/HeadContent';
-import Updates from '@/components/homepage/Updates';
+import Updates from '@/components/Updates';
 
 import styles from '@/styles/Home.module.css';
 

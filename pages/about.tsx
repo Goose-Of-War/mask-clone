@@ -33,30 +33,28 @@ export default function About () {
 			We have five teams which are responsible for various aspects of our society.
 		</p>
 		<br/>
-		<p>
-			<div id={styles["teams-container"]}>
-				<div className={styles["team-border"]}>
-					<h4>AMV Team</h4>
-					<p>The AMV Team works on making AMVs (Anime Music Videos), be it full-fledged 3-minute long videos or small 30-second shorts or reels. They also work on making the promotional videos of the events as well as live coverage videos.</p>
-				</div>
-				<div className={styles["team-border"]}>
-					<h4>Design and Arts Team</h4>
-					<p>The Design and Arts team is involved in making fan arts, be it traditional or digital. They also work on making the designs of the posters, merchandise and even the website.</p>
-				</div>
-				<div className={styles["team-border"]}>
-					<h4>Media and Newsletter Team</h4>
-					<p>Just like the name suggests, the Media and Newsletter team is in charge of handling our social media and responsible for releasing newsletters. Check them out for interesting articles and puzzles.</p>
-				</div>
-				<div className={styles["team-border"]}>
-					<h4>Quiz Team</h4>
-					<p>The Quiz team works on making engaging anime quizzes and puzzles for various events, competition and newsletter. They also work on handling the schematics of the event.</p>
-				</div>
-				<div className={styles["team-border"]}>
-					<h4>Web Development</h4>
-					<p>WebDev team ensures the smooth digital experiences, managing our website and making it easy for everyone to connect.</p>
-				</div>
+		<div id={styles["teams-container"]}>
+			<div className={styles["team-border"]}>
+				<h4>AMV Team</h4>
+				<p>The AMV Team works on making AMVs (Anime Music Videos), be it full-fledged 3-minute long videos or small 30-second shorts or reels. They also work on making the promotional videos of the events as well as live coverage videos.</p>
 			</div>
-		</p>
+			<div className={styles["team-border"]}>
+				<h4>Design and Arts Team</h4>
+				<p>The Design and Arts team is involved in making fan arts, be it traditional or digital. They also work on making the designs of the posters, merchandise and even the website.</p>
+			</div>
+			<div className={styles["team-border"]}>
+				<h4>Media and Newsletter Team</h4>
+				<p>Just like the name suggests, the Media and Newsletter team is in charge of handling our social media and responsible for releasing newsletters. Check them out for interesting articles and puzzles.</p>
+			</div>
+			<div className={styles["team-border"]}>
+				<h4>Quiz Team</h4>
+				<p>The Quiz team works on making engaging anime quizzes and puzzles for various events, competition and newsletter. They also work on handling the schematics of the event.</p>
+			</div>
+			<div className={styles["team-border"]}>
+				<h4>Web Development Team</h4>
+				<p>WebDev team ensures the smooth digital experiences, managing our website and making it easy for everyone to connect.</p>
+			</div>
+		</div>
 		<p>
 			More often than not, multiple teams collaborate together to work on cross-team projects or even full-fledged <Link isRed href="/events">events</Link>.
 		</p>
