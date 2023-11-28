@@ -2,6 +2,7 @@ import HeadContent from '@/components/HeadContent';
 import Updates from '@/components/Updates';
 
 import styles from '@/styles/Home.module.css';
+import Image from 'next/image';
 import Link from 'next/link';
 
 export default function HomePage () {
@@ -20,7 +21,7 @@ export default function HomePage () {
 		<>
 			<HeadContent />
 			<div className={styles["mask-banner"]}>
-				<img className={styles["mask-banner-image"]} src="/transparent_logo.png" alt="MASK"/>
+				<Image className={styles["mask-banner-image"]} src="/transparent_logo.png" alt="MASK" width={120} height={120}/>
 				<span className={styles["mask-banner-text-container"]}><span className={styles["mask-banner-text"]}>Manga and Anime Society Kharagpur</span></span>
 				<span className={styles["mask-banner-edge"]}>&nbsp;</span>
 			</div>

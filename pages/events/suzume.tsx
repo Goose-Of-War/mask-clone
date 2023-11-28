@@ -34,15 +34,13 @@ export default function EventPage () {
 				or playing dumb charades, which turned out to be a goldmine for inside jokes.
 			</p>
 			
-			<Image src="/events/suzume/1.jpg" caption="Minutes before boarding train (no disasters yet)" />
+			<Image src="/events/suzume/1.jpg" alt="Minutes before boarding train" caption="Minutes before boarding train (no disasters yet)" />
 			
 			<p>
-				After reaching Howrah, we took a bus and joined a few guys who chose to meet us directly at South City Mall. (Why didn't you come with us? <span style={{display: "inline-block;"}}> T-T </span> ... <i>ahem</i>)
-				After having lunch (or rather, brunch for quite a few of us), it was time to watch Suzume. Air-conditioned room, comfy seats, and a cup of cold drink-what's
-				a better way to watch a movie in a scorching summer?
+				After reaching Howrah, we took a bus and joined a few guys who chose to meet us directly at South City Mall. (Why didn&apos;t you come with us? <span style={{display: "inline-block;"}}> T-T </span> ... <i>ahem</i>) After having lunch (or rather, brunch for quite a few of us), it was time to watch Suzume. Air-conditioned room, comfy seats, and a cup of cold drink-what&apos;s a better way to watch a movie in a scorching summer?
 			</p>
 			
-			<Image src="/events/suzume/3.jpg" caption="Well that was a great movie, wasn't it, folks?" />
+			<Image src="/events/suzume/3.jpg" alt="Group photo inside the mall" caption="Well that was a great movie, wasn&apos;t it, folks?" />
 			
 			<p>
 				After the movie, we spent an hour looking at the mangas in the book store at the mall, (even purchasing them) and we slowly parted ways,
@@ -54,11 +52,11 @@ export default function EventPage () {
 					</i>
 				<br />
 			</p>
-			<Image src="/events/suzume/4.jpg" caption="Sayonara South City Inox"/ >
+			<Image src="/events/suzume/4.jpg" alt="Group photo outside the mall" caption="Sayonara South City Inox"/ >
 			
 			<Emphasis marginal>
 					Bonus content:<br />
-					&emsp;Those who chose to go back to the campus had their own adventure, but that's a story just for us (maybe you'll find out if you join MASK)
+					&emsp;Those who chose to go back to the campus had their own adventure, but that&apos;s a story just for us (maybe you&apos;ll find out if you join MASK)
 			</Emphasis>
 		</TextPage>
 		<Link href="/events" isRed>Click here</Link> to go back

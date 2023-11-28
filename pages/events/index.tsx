@@ -12,7 +12,7 @@ export default function Events () {
 			author="Nishkal Prakash"
 			desc={<>
 				<b>Ore wa Monkey D. Luffy! Kaizokuō ni naru otoko da!!</b>
-				<br/> With the hype of Luffy's latest transformation (Gear 5) breaking the internet and causing fans all over to go crazy over it, how could we not screen it in our institute? This article covers the story of how the screening went.
+				<br/> With the hype of Luffy&quot;s latest transformation (Gear 5) breaking the internet and causing fans all over to go crazy over it, how could we not screen it in our institute? This article covers the story of how the screening went.
 			</>}
 			img="/events/gear-5-screening.jpg"
 			link="/events/gear-5-screening"

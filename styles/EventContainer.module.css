@@ -10,13 +10,14 @@
 	text-align: left;
 }
 
-.image-container > img {
-    object-fit: contain;
-    max-height: 42vh;
-    max-width: 40vw;
+.image-container>img {
+	object-fit: contain;
+	max-height: 42vh;
+	max-width: 40vw;
 	height: fit-content;
-    border-radius: 10px;
-    border: solid 2px;
+	width: fit-content;
+	border-radius: 10px;
+	border: solid 2px;
 	color: inherit !important;
 }
 
@@ -33,11 +34,13 @@
 	font-size: 1.04em;
 }
 
-.details span, .details h2, .details a:hover {
-    color: var(--error-red);
+.details span,
+.details h2,
+.details a:hover {
+	color: var(--error-red);
 }
 
-.details > h2 > a {
-    text-decoration: none;
-    color: var(--red);
+.details>h2>a {
+	text-decoration: none;
+	color: var(--red);
 }

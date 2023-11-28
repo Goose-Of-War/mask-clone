@@ -1,4 +1,5 @@
 import { IconType } from "react-icons";
+import Image from "next/image";
 
 import styles from '@/styles/Members.module.css';
 
@@ -16,7 +17,7 @@ interface MemberProps {
 
 const Member: React.FC<MemberProps> = ({ name, image, teams }) => {
 	return (<div className={styles['member']}>
-		<img src={image} alt={name} loading="lazy" />
+		<Image src={image} alt={name} width={100} height={100} className={styles['member-icon']} />
 		<div className={styles['div-line']}> &nbsp; </div>
 		<div className={styles['member-desc']}>{ name }</div>
 		<div className={styles["teamlist"]}>
