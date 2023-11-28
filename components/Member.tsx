@@ -20,7 +20,7 @@ const Member: React.FC<MemberProps> = ({ name, image, teams }) => {
 		<div className={styles['div-line']}> &nbsp; </div>
 		<div className={styles['member-desc']}>{ name }</div>
 		<div className={styles["teamlist"]}>
-			{teams?.map(({color, title, Icon}) => (<Icon size={20} title={title} color={color} />))}
+			{teams?.map(({color, title, Icon}) => (<Icon size={20} title={title} color={color} key={title} />))}
 		</div>
 	</div>)
 };

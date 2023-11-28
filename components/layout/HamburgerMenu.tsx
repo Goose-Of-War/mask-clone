@@ -2,6 +2,8 @@ import React from 'react';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { IoClose } from 'react-icons/io5';
 import HamburgerLink from './HamburgerLink';
+import Link from 'next/link';
+import Image from 'next/image';
 
 interface HamburgerMenuProps {
 	currentPage?: String;
@@ -29,9 +31,9 @@ const HamburgerMenu: React.FC<HamburgerMenuProps> = ({ currentPage }) => {
 
 	return (<>
 		<div className="plate">
-			<a href="/"><div className="burger-home">
-				<img src="/logo.jpeg" id="burger-logo" alt="Logo"/>
-			</div></a>
+			<Link href="/"><div className="burger-home">
+				<Image src="/logo.jpeg" id="burger-logo" alt="Logo" height={40} width={40}/>
+			</div></Link>
 			<div className="burger" onClick={ onClick }>
 				{
 					visible ? <IoClose size={ 40 } /> : < GiHamburgerMenu size={ 40 } />
@@ -45,12 +47,12 @@ const HamburgerMenu: React.FC<HamburgerMenuProps> = ({ currentPage }) => {
 			<div className='link-flex-container'>
 				<div>
 					{ topLinks.map(({ name, href }) => (
-						<HamburgerLink label={ name } link={ href } isCurrent={ currentPage === href.slice(1,) } />
+						<HamburgerLink label={ name } link={ href } isCurrent={ currentPage === href.slice(1,)} key={href.slice(1)}  />
 					)) }
 				</div>
 				<div>
 					{ bottomLinks.map(({ name, href }) => (
-						<HamburgerLink label={ name } link={ href } isCurrent={ currentPage === href.slice(1,) } />
+						<HamburgerLink label={ name } link={ href } isCurrent={ currentPage === href.slice(1,) } key={href.slice(1)} />
 					)) }
 				</div>
 			</div>

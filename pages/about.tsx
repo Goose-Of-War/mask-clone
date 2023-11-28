@@ -1,7 +1,7 @@
 import HeadContent from '@/components/HeadContent';
 import TextPage from '@/components/TextPage';
 import Emphasis from '@/components/textpage/Emphasis';
-import Link from '@/components/textpage/Link';
+import Link from '@/components/textpage/InnerLink';
 
 import styles from '@/styles/About.module.css';
 
@@ -13,7 +13,7 @@ export default function About () {
 		keywords={[ 'About Us', 'Our Society', 'About', 'Teams', 'History' ]}
 	/>
 	<TextPage title="Manga and Anime Society Kharagpur">
-		<Emphasis isRed> Konnichiwa minna-san!!! We are Manga and Anime Society Kharagpur (MASK). </Emphasis>
+		<Emphasis isRed big center> Konnichiwa minna-san!!! We are Manga and Anime Society Kharagpur (MASK). </Emphasis>
 		<h2> What is MASK? </h2>
 		<p>
 			We are a society of enthusiastic otakus with a keen interest in anime, mangas, manhwas and more.

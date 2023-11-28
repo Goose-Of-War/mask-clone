@@ -1,6 +1,6 @@
 import HeadContent from "@/components/HeadContent";
 import TextPage from "@/components/TextPage";
-import Link from "@/components/textpage/Link";
+import Link from "@/components/textpage/InnerLink";
 
 import styles from "@/styles/Art.module.css";
 
@@ -35,7 +35,7 @@ export default function ArtPage () {
 			link: '/art/202303-2.webp',
 			type: 'art',
 			attr: ['Dibya Ranjan Samal'],
-			date: '2023-03-09T13:00:00.000Z',
+			date: '2023-03-12T13:00:00.000Z',
 			hype: true,
 			metadata: {
 				height: 635,
@@ -139,7 +139,7 @@ export default function ArtPage () {
 			</p>
 		</TextPage>
 		<section id={styles['photos']}>
-			{ art.map(({ name, link, attr }) => (<div className={styles["img-container"]} key={link.slice(5, 4)}>
+			{ art.map(({ name, link, attr, date }) => (<div className={styles["img-container"]} key={date}>
 				<img src={link} alt={name} loading="lazy" className={styles["img"]} />
 				<div className={styles["overlay"]}>
 					<h1>{ name }</h1>

@@ -2,6 +2,7 @@ import HeadContent from '@/components/HeadContent';
 import Updates from '@/components/Updates';
 
 import styles from '@/styles/Home.module.css';
+import Link from 'next/link';
 
 export default function HomePage () {
 	const eventAlert = null;
@@ -39,13 +40,13 @@ export default function HomePage () {
 			<div className={styles['flex-container']} id={styles['bottom-container']}>
 				<div className={styles['top-container']}>
 					{/* Art */}
-				<div className={styles["submit-stuff"]}><a href="/submissions"><button className={styles["submit-button"]}>Submit your content!</button></a></div>
+				<div className={styles["submit-stuff"]}><Link href="/submissions"><button className={styles["submit-button"]}>Submit your content!</button></Link></div>
 				</div>
 				{/* Videos */}
 			</div>
 			<div style={{ display: 'flex', justifyContent: 'space-around' }}>
-				<a className="faded" style={{ marginRight: "20px" }} href="/privacy">Privacy Policy</a>
-				<a className="faded" style={{ marginLeft: "20px" }} href="/terms">Terms of Use</a>
+				<Link className="faded" style={{ marginRight: "20px" }} href="/privacy">Privacy Policy</Link>
+				<Link className="faded" style={{ marginLeft: "20px" }} href="/terms">Terms of Use</Link>
 			</div>
 		</>
 	)

@@ -1,6 +1,7 @@
 import { MdFiberNew } from 'react-icons/md';
 
 import styles from '@/styles/Home.module.css';
+import Link from 'next/link';
 
 interface Update {
 	name: string;
@@ -20,14 +21,14 @@ const Updates: React.FC<UpdatesProps> = ({ updates }) => {
 		<div className={styles["notices-list"]}>
 			{ updates.filter(({hype}) => hype).map(({ name, link, type, date }, index) => (<>
 				{ (index && <hr className={styles['notice-break']} />) || undefined }
-					<a href={ (type === 'art' ? '/art/' : '' ) + link } className={styles['notice-link']}>
+					<Link href={ (type === 'art' ? '/art/' : '' ) + link } className={styles['notice-link']} key={ (date || new Date()).toString() }>
 						<div className={styles['notice-post']}>
 							{ name }
 							{ date && (Date.now() - date.getTime() < 7 * 24 * 60 * 60 * 1000) &&
 								<MdFiberNew size={16} color='var(--error-red)' style={{ marginLeft: 4 }} />
 							}
 						</div>
-					</a>
+					</Link>
 				</>)) }
 		</div>
 	</div></div>);

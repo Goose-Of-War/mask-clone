@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 interface HamburgerLinkProps {
 	label: string;
 	link: string;
@@ -6,9 +8,9 @@ interface HamburgerLinkProps {
 
 const HamburgerLink: React.FC<HamburgerLinkProps> = ({ label, link, isCurrent }) => {
 	return (
-		<a href={link} target="_self">
+		<Link href={link} target="_self">
 			<div className={ 'lettuce ' + (isCurrent ? 'active-page' : '') }>{ label }</div>
-		</a>
+		</Link>
 	);
 };
 

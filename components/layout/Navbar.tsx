@@ -1,3 +1,6 @@
+import Link from "next/link";
+import Image from "next/image";
+
 import NavbarItem from "./NavbarItem";
 
 interface NavbarProps {
@@ -21,9 +24,9 @@ const Navbar: React.FC<NavbarProps> = ({ currentPage }) => {
 		<nav>
 			<div className='navbar-full'>
 				<ul>
-					<li><a href="/" style={{ padding: '0px 16px' , verticalAlign : 'middle' }} className='nohover' target="_self">
-						<img src="logo.jpeg" alt="Logo" width="100%" height="100%" id="navbar-logo"/>
-					</a></li>
+					<li><Link href="/" style={{ padding: '0px 16px' , verticalAlign : 'middle' }} className='nohover' target="_self">
+						<Image src="/logo.jpeg" alt="Logo" width={40} height={40} id="navbar-logo"/>
+					</Link></li>
 					<span className="navbar-line">&nbsp;</span>
 					<div className="navbar-container">
 						{ navLinks.map(({ name, href }) => (
@@ -31,7 +34,7 @@ const Navbar: React.FC<NavbarProps> = ({ currentPage }) => {
 						)) }
 					</div>
 					<div id="dropdown">
-						<a href="/about" className="dropbtn" target="_self">About</a>
+						<Link href="/about" className="dropbtn" target="_self">About</Link>
 						<div className="dropdown-content">
 							{ dropdownLinks.map(({ name, href }) => (
 								<NavbarItem label={ name } link={ href } isCurrent={ currentPage === href.slice(1,) } key={ href }/>

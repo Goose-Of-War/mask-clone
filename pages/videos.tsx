@@ -2,7 +2,7 @@ import LiteYouTubeEmbed from 'react-lite-youtube-embed';
 
 import HeadContent from "@/components/HeadContent";
 import TextPage from "@/components/TextPage";
-import Link from "@/components/textpage/Link";
+import Link from "@/components/textpage/InnerLink";
 
 import styles from '@/styles/Videos.module.css';
 
@@ -24,7 +24,7 @@ export default function VideosPage () {
 			<p style={{ textAlign: "center"}}>Check out our video content here or on <Link isRed href="https://www.youtube.com/@maskiitkgp">YouTube</Link></p>
 		</TextPage>
 		<div className={styles['youtube-videos']}>
-			{ videos.map(({ id, name }) => (<LiteYouTubeEmbed
+			{ videos.map(({ id, name }) => (<LiteYouTubeEmbed key={id}
 				id={id}
 				title={name}
 				wrapperClass={styles['youtube-vid'] + ' yt-lite'}

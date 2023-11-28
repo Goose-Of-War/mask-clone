@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { IconType } from 'react-icons';
 
 interface SocialMediaIconProps {
@@ -7,9 +8,9 @@ interface SocialMediaIconProps {
 }
 
 const SocialMediaIcon: React.FC<SocialMediaIconProps> = ({ link, title, Icon }) => {
-	return (<a href={ link } target='_blank' title={ title } className='social-link'>
+	return (<Link href={ link } target='_blank' title={ title } className='social-link'>
 		<Icon size={ 36 } />
-	</a>);
+	</Link>);
 };
 
 export default SocialMediaIcon;

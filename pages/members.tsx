@@ -66,11 +66,11 @@ export default function MembersPage () {
 		/>
 		<h1> Our Members </h1>
 		{ Object.entries(records).map(([position, members]) => (Boolean(members.length) &&
-			<div className={styles['status']}>
+			<div className={styles['status']} key={position}>
 				<h2><u>{ position }</u></h2>
 				<div className={styles['yearbox']}>
 					<div className={styles['list']}>
-						{ members.map(({ name, image, teams }) => (<Member
+						{ members.map(({ name, image, teams }) => (<Member key={image}
 							name={name}
 							image={image}
 							teams={teams}

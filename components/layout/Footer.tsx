@@ -1,4 +1,6 @@
 import React from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
 import { BiLogoFacebookSquare, BiLogoGmail, BiLogoGithub, BiLogoInstagram, BiLogoYoutube } from 'react-icons/bi'
 
 import SocialMediaIcon from './SocialMediaIcon';
@@ -14,8 +16,8 @@ const Footer = () => {
 	
 
 	return (<footer>
-		<a id="footer-logo" href="/"><img src="/logo.jpeg" alt="MASK"/></a>
-		<a href="/" id="footer-name"><p>Manga and Anime<br/>Society Kharagpur</p></a>
+		<Link id="footer-logo" href="/"><Image src="/logo.jpeg" alt="MASK" width={50} height={50} /></Link>
+		<Link href="/" id="footer-name"><p>Manga and Anime<br/>Society Kharagpur</p></Link>
 		<div id="contact-us"><span className="float-middle">Find us!</span></div>
 		{ footerLinks.map(({ name, href, icon }) => (
 			<SocialMediaIcon title={ name } link={ href } Icon={ icon } key={ href } />

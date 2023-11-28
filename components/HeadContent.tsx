@@ -20,8 +20,8 @@ const HeadContent: React.FC<HeadContentProps> = ({ title, description, keywords,
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="keywords" content={ metaKeywords.join(', ') } />
 		<link rel="icon" href="/favicon.ico" />
-		{ stylesheets && stylesheets.map(link => (<link rel='stylesheet' href={link} />)) }
-		{ jsLinks && jsLinks.map(link => (<Script src={ link } />)) }
+		{ stylesheets && stylesheets.map((link, index) => (<link rel='stylesheet' href={link} key={index} />)) }
+		{ jsLinks && jsLinks.map((link, index) => (<Script src={ link } key={index} />)) }
 		{ children }
 	</Head>)
 };
