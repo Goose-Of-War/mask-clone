@@ -2,7 +2,7 @@ import HeadContent from "@/components/HeadContent";
 import TextPage from "@/components/TextPage";
 import Link from "@/components/textpage/Link";
 
-export default function Privacy () {
+export default function PrivacyPage () {
 	return (<>
 		<HeadContent
 			title="Privacy Policy"

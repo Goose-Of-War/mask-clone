@@ -2,7 +2,7 @@ import HeadContent from "@/components/HeadContent";
 import TextPage from "@/components/TextPage";
 import Link from "@/components/textpage/Link";
 
-export default function Terms () {
+export default function TermsPage () {
 	return (<>
 		<HeadContent
 			title="Terms of Use"

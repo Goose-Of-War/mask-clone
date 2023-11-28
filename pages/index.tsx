@@ -3,7 +3,7 @@ import Updates from '@/components/homepage/Updates';
 
 import styles from '@/styles/Home.module.css';
 
-export default function Home() {
+export default function HomePage () {
 	const eventAlert = null;
 	const recentPosts = [
 		{ link: 'https://youtu.be/VxVDJhMU6Zc', name: '[AMV] YLIA x Horimiya', type: 'youtube', hype: true, date: new Date() },

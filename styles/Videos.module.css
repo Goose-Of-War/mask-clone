@@ -1,0 +1,17 @@
+.youtube-videos {
+	display: inline-flex;
+	width: 100%;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.youtube-vid {
+	max-height: 315px;
+	max-width: 565px;
+	width: 100vh;
+	height: 100vw;
+	margin: 40px;
+	/* padding: 10px; */
+	border: 2px solid var(--off-white);
+	border-radius: 10px;
+	background-color: var(--medium-gray);
+}

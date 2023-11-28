@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Script from "next/script";
 
 interface HeadContentProps {
 	title?: string;
@@ -20,7 +21,7 @@ const HeadContent: React.FC<HeadContentProps> = ({ title, description, keywords,
 		<meta name="keywords" content={ metaKeywords.join(', ') } />
 		<link rel="icon" href="/favicon.ico" />
 		{ stylesheets && stylesheets.map(link => (<link rel='stylesheet' href={link} />)) }
-		{ jsLinks && jsLinks.map(link => (<script src={ link } />)) }
+		{ jsLinks && jsLinks.map(link => (<Script src={ link } />)) }
 		{ children }
 	</Head>)
 };
