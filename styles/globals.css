@@ -70,6 +70,15 @@ a:hover {
 	padding: 30px 60px;
 	border-radius: 20px;
 	margin: 20px 10%;
+	text-align: justify;
+}
+
+.text p {
+	margin: 8px 0px;
+}
+
+.text h2, .text h3, .text h4 {
+	color: var(--error-red);
 }
 
 .faded {
@@ -136,24 +145,20 @@ footer {
 	text-decoration: none;
 	display: flex;
 	align-items: center;
-	height: 70px
+	height: 70px;
+	text-align: left;
+	transition: 0.3s ease;
 }
 
 a.social-link {
 	align-self: center;
 	margin: 5px;
+	color: var(--red);
 }
 
-img.social-icon {
-	vertical-align: middle;
-	border-radius: 2px;
-	width: 36px;
-	transition: transform .2s;
-	display: inline-flex;
-}
-
-img.social-icon:hover {
+.social-link:hover {
 	transform: scale(1.2);
+	color: var(--white);
 }
 
 div#contact-us {

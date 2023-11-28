@@ -57,6 +57,6 @@ const HamburgerMenu: React.FC<HamburgerMenuProps> = ({ currentPage }) => {
 			<hr className="border-bottom"/>
 		</div>
 	</>);
-}
+};
 
 export default HamburgerMenu;

@@ -27,7 +27,7 @@ const Navbar: React.FC<NavbarProps> = ({ currentPage }) => {
 					<span className="navbar-line">&nbsp;</span>
 					<div className="navbar-container">
 						{ navLinks.map(({ name, href }) => (
-							<li><NavbarItem label={ name } link={ href } isCurrent={ currentPage === href.slice(1,) } key={ href }/></li>
+							<li key={ href.slice(1,) }><NavbarItem label={ name } link={ href } isCurrent={ currentPage === href.slice(1,) }/></li>
 						)) }
 					</div>
 					<div id="dropdown">

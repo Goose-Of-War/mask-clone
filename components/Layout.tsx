@@ -11,13 +11,14 @@ interface LayoutProps {
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
 	const Router = useRouter();
-	const [ viewportWidth, setViewportWidth ] = React.useState(window.innerWidth);
+	const [ viewportWidth, setViewportWidth ] = React.useState(720);
 
 	const updateViewportWidth = () => {
 		setViewportWidth(window.innerWidth);
 	}
-
+	
 	React.useEffect(() => {
+		updateViewportWidth();
 		window.addEventListener('resize', updateViewportWidth);
 		return () => window.removeEventListener('resize', updateViewportWidth);
 	});

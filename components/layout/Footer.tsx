@@ -21,6 +21,6 @@ const Footer = () => {
 			<SocialMediaIcon title={ name } link={ href } Icon={ icon } key={ href } />
 		)) }
 		</footer>);
-}
+};
 
 export default Footer;
