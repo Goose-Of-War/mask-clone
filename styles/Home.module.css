@@ -116,6 +116,7 @@
 	flex-wrap: wrap;
 	width: 70vw;
 	margin: 0 auto;
+	justify-content: center;
 }
 .vidshow {
 	margin: 40px auto;

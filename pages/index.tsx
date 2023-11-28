@@ -35,6 +35,18 @@ export default function Home() {
 					</div>
 				</div>
 			</div>
+			<hr className={styles['flex-break']}/>
+			<div className={styles['flex-container']} id={styles['bottom-container']}>
+				<div className={styles['top-container']}>
+					{/* Art */}
+				<div className={styles["submit-stuff"]}><a href="/submissions"><button className={styles["submit-button"]}>Submit your content!</button></a></div>
+				</div>
+				{/* Videos */}
+			</div>
+			<div style={{ display: 'flex', justifyContent: 'space-around' }}>
+				<a className="faded" style={{ marginRight: "20px" }} href="/privacy">Privacy Policy</a>
+				<a className="faded" style={{ marginLeft: "20px" }} href="/terms">Terms of Use</a>
+			</div>
 		</>
 	)
 }
