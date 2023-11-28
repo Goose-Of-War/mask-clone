@@ -165,11 +165,11 @@
 	.mask-banner-image {
 		left: 0;
 	}
-}
-@media (max-width: 600px) {
+
 	.about-stuff {
 		padding-right: 0;
 	}
+
 	.vidshow-container {
 		height: 200px;
 	}

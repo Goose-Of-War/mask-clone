@@ -1,9 +1,19 @@
 import HeadContent from '@/components/HeadContent';
+import Updates from '@/components/homepage/Updates';
 
 import styles from '@/styles/Home.module.css';
 
 export default function Home() {
 	const eventAlert = null;
+	const recentPosts = [
+		{ link: 'https://youtu.be/VxVDJhMU6Zc', name: '[AMV] YLIA x Horimiya', type: 'youtube', hype: true, date: new Date() },
+		{ link: 'https://youtu.be/lzvrb4ePxdU', name: '[AMV] Mob Psycho 100', type: 'youtube', hype: true, date: new Date() },
+		{ link: '/events/one-piece-screening', name: 'One Piece Screening', type: 'event', hype: true },
+		{ link: '/newsletters/2023-05-1', name: 'May Newsletter', type: 'newsletter', hype: true },
+		{ link: 'https://youtu.be/P0NxHvWz1ns', name: '[AMV] Cosplay Event Coverage', type: 'youtube', hype: true },
+		{ link: 'https://youtu.be/w_tkq4syNnI', name: '[AMV] Mushoku Tensei', type: 'youtube', hype: true },
+		{ link: 'https://www.instagram.com/reel/CsgS9zQIpdN', name: '[Reel] Oshi No Ko', type: 'instagram', hype: true }
+	];
 
 	return (
 		<>
@@ -17,12 +27,7 @@ export default function Home() {
 				{ eventAlert }
 			</div>) }
 			<div className={styles["flex-container"]}>
-				<div className={styles["notices"]}><div className={styles["noticebox"]}>
-					<div className={styles["notices-header"]}>Updates!</div>
-					<div className={styles["notices-list"]}>
-						{/* Posts */}
-					</div>
-				</div></div>
+				<Updates updates={recentPosts} />
 				<div className={styles["about-stuff"]}>
 					<h1>Welcome to the MASK website!</h1>
 					<div className={'text ' + styles["text"]} style={{ fontSize: '1.1em' }}>
